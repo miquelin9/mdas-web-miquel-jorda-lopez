@@ -1,0 +1,34 @@
+com/ccm/user/user/infrastructure/converter/ObjectToJsonStringConverterTest.java
+ com.ccm.user.user.infrastructure.converter.ObjectToJsonStringConverterTest
+com/ccm/pokemon/pokemon/infrastructure/PokemonRetrieverApiClientTest.java
+ com.ccm.pokemon.pokemon.infrastructure.PokemonRetrieverApiClientTest
+com/ccm/pokemon/pokemon/domain/services/EventPublisherTest.java
+ com.ccm.pokemon.pokemon.domain.services.EventPublisherTest
+com/ccm/user/user/domain/services/UserFinderTest.java
+ com.ccm.user.user.domain.services.UserFinderTest
+com/ccm/user/user/domain/services/UserCreatorTest.java
+ com.ccm.user.user.domain.services.UserCreatorTest
+com/ccm/pokemon/pokemon/infrastructure/PokemonControllerTest.java
+ com.ccm.pokemon.pokemon.infrastructure.PokemonControllerTest
+com/ccm/user/user/application/usecases/AddFavouritePokemonUseCaseTest.java
+ com.ccm.user.user.application.usecases.AddFavouritePokemonUseCaseTest
+com/ccm/user/user/domain/services/UserSaverTest.java
+ com.ccm.user.user.domain.services.UserSaverTest
+com/ccm/pokemon/pokemon/application/FavouritePokemonAddedNotifierUseCaseTest.java
+ com.ccm.pokemon.pokemon.application.FavouritePokemonAddedNotifierUseCaseTest
+com/ccm/user/user/application/usecases/AddUserUseCaseTest.java
+ com.ccm.user.user.application.usecases.AddUserUseCaseTest
+com/ccm/pokemon/pokemon/domain/services/FavouritePokemonCounterUpdaterTest.java
+ com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdaterTest
+com/ccm/user/user/domain/services/AddFavouritePokemonToUserTest.java
+ com.ccm.user.user.domain.services.AddFavouritePokemonToUserTest
+com/ccm/user/user/infrastructure/controller/UserControllerTest.java
+ com.ccm.user.user.infrastructure.controller.UserControllerTest
+com/ccm/user/user/infrastructure/repository/InMemoryUserRepositoryTest.java
+ com.ccm.user.user.infrastructure.repository.InMemoryUserRepositoryTest
+com/ccm/user/user/domain/services/EventPublisherTest.java
+ com.ccm.user.user.domain.services.EventPublisherTest
+com/ccm/pokemon/pokemon/infrastructure/listener/RabbitMqEventListenerIT.java
+ com.ccm.pokemon.pokemon.infrastructure.listener.RabbitMqEventListenerIT
+com/ccm/user/user/infrastructure/rabbitmq/RabbitMqEventPublisherIT.java
+ com.ccm.user.user.infrastructure.rabbitmq.RabbitMqEventPublisherIT

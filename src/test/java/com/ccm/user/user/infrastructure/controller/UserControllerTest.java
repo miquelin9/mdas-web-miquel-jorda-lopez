@@ -1,4 +1,4 @@
-package com.ccm.user.user.infrastructure;
+package com.ccm.user.user.infrastructure.controller;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.apache.http.HttpStatus;
