@@ -26,9 +26,9 @@ public class RabbitMqEventListener extends BaseRabbitMqListener {
     private final Logger LOGGER = Logger.getLogger(RabbitMqEventListener.class);
 
     @ConfigProperty(name = "rabbit.queue")
-    String RABBIT_QUEUE = "pokemon-in";
+    String RABBIT_QUEUE;
     @ConfigProperty(name = "rabbit.host")
-    String RABBIT_HOST = "localhost";
+    String RABBIT_HOST;
 
     @Inject
     JsonToPokemonDTOParser jsonToPokemonDTOParser;

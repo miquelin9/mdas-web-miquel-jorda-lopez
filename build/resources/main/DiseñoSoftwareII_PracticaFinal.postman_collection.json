@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "6644d23c-6d43-4f53-9a67-5b4bc5b09619",
+		"name": "DiseñoSoftwareII_PracticaFinal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "NEW USER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/user/add?name=Alba&userId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"add"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Alba"
+								},
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD FAVOURITE POKEMON TO USER",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/user/favouritepokemon/add?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"favouritepokemon",
+								"add"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pokemon",
+			"item": [
+				{
+					"name": "GET POKEMON",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/pokemon/get/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"pokemon",
+								"get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

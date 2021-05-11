@@ -1,6 +1,5 @@
 package com.ccm.pokemon.pokemon.domain.services;
 
-import com.ccm.BaseTest;
 import com.ccm.pokemon.pokemon.domain.aggregate.Pokemon;
 import com.ccm.pokemon.pokemon.domain.exceptions.NetworkConnectionException;
 import com.ccm.pokemon.pokemon.domain.exceptions.PokemonNotFoundException;

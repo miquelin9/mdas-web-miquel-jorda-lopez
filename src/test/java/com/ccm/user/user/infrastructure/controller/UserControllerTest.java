@@ -14,7 +14,7 @@ public class UserControllerTest {
         given()
             .queryParam("name", "tipoDeIncógnito")
             .queryParam("userId", 123456789)
-            .get("/user/addUser")
+            .post("/user/add")
             .then()
             .assertThat()
             .statusCode(HttpStatus.SC_OK);
@@ -25,12 +25,12 @@ public class UserControllerTest {
         given()
             .queryParam("name", "tipoDeIncógnito")
             .queryParam("userId", 1)
-            .get("/user/addUser");
+            .post("/user/add");
 
         given()
             .queryParam("name", "tipoDeIncógnito")
             .queryParam("userId", 1)
-            .get("/user/addUser")
+            .post("/user/add")
             .then()
             .assertThat()
             .statusCode(HttpStatus.SC_FORBIDDEN);
@@ -41,12 +41,12 @@ public class UserControllerTest {
         given()
             .queryParam("name", "tipoDeIncógnito")
             .queryParam("userId", 1)
-            .get("/user/addUser");
+            .post("/user/add");
 
         given()
             .header("id", 1)
             .queryParam("id", 1234)
-            .get("/user/addFavouritePokemon")
+            .post("/user/favouritepokemon/add")
             .then()
             .assertThat()
             .statusCode(HttpStatus.SC_OK);
@@ -57,17 +57,17 @@ public class UserControllerTest {
         given()
             .queryParam("name", "tipoDeIncógnito")
             .queryParam("userId", 1)
-            .get("/user/addUser");
+            .post("/user/add");
 
         given()
             .header("id", 1)
             .queryParam("id", 123)
-            .get("/user/addFavouritePokemon");
+            .post("/user/favouritepokemon/add");
 
         given()
             .header("id", 1)
             .queryParam("id", 123)
-            .get("/user/addFavouritePokemon")
+            .post("/user/favouritepokemon/add")
             .then()
             .assertThat()
             .statusCode(HttpStatus.SC_CONFLICT);
@@ -78,20 +78,9 @@ public class UserControllerTest {
         given()
             .header("id", 9)
             .queryParam("id", 123)
-            .get("/user/addFavouritePokemon")
+            .post("/user/favouritepokemon/add")
             .then()
             .assertThat()
             .statusCode(HttpStatus.SC_FORBIDDEN);
     }
-
-//    @Test
-//    public void shouldGetHttpCode500WhenAddingANewFavouritePokemon() {
-//        given()
-//            .header("id", "1")
-//            .queryParam("id", 123)
-//            .get("/user/addFavouritePokemon")
-//            .then()
-//            .assertThat()
-//            .statusCode(HttpStatus.SC_INTERNAL_SERVER_ERROR);
-//    }
 }

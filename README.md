@@ -1,4 +1,4 @@
-# Reto Pokémon (PARTE 1, recuperación de tipos de un pokémon)
+# Reto Pokémon: Parte individual
 
 ## Pre-requisitos
 

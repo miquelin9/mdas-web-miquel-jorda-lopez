@@ -1,40 +1,38 @@
-com/ccm/user/user/infrastructure/converter/ObjectToJsonStringConverterTest.java
- com.ccm.user.user.infrastructure.converter.ObjectToJsonStringConverterTest
 com/ccm/user/user/infrastructure/repository/InMemoryUserRepositoryTest.java
  com.ccm.user.user.infrastructure.repository.InMemoryUserRepositoryTest
-com/ccm/user/user/infrastructure/controller/UserControllerTest.java
- com.ccm.user.user.infrastructure.controller.UserControllerTest
 com/ccm/user/user/domain/services/UserFinderTest.java
  com.ccm.user.user.domain.services.UserFinderTest
 com/ccm/user/user/domain/services/UserCreatorTest.java
  com.ccm.user.user.domain.services.UserCreatorTest
-com/ccm/pokemon/pokemon/infrastructure/controller/PokemonControllerTest.java
- com.ccm.pokemon.pokemon.infrastructure.controller.PokemonControllerTest
-com/ccm/user/user/application/usecases/AddFavouritePokemonUseCaseTest.java
- com.ccm.user.user.application.usecases.AddFavouritePokemonUseCaseTest
-com/ccm/user/user/domain/services/UserSaverTest.java
- com.ccm.user.user.domain.services.UserSaverTest
-com/ccm/user/user/domain/services/AddFavouritePokemonToUserTest.java
- com.ccm.user.user.domain.services.AddFavouritePokemonToUserTest
-com/ccm/user/user/application/usecases/AddUserUseCaseTest.java
- com.ccm.user.user.application.usecases.AddUserUseCaseTest
-com/ccm/BaseTest.java
- com.ccm.BaseTest
-com/ccm/pokemon/pokemon/infrastructure/api/PokemonRetrieverApiClientTest.java
- com.ccm.pokemon.pokemon.infrastructure.api.PokemonRetrieverApiClientTest
-com/ccm/user/user/infrastructure/rabbitmq/RabbitMqEventPublisherIT.java
- com.ccm.user.user.infrastructure.rabbitmq.RabbitMqEventPublisherIT
-com/ccm/pokemon/pokemon/domain/services/FavouritePokemonCounterUpdaterTest.java
- com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdaterTest
 com/ccm/user/user/domain/services/EventPublisherTest.java
  com.ccm.user.user.domain.services.EventPublisherTest
+com/ccm/user/user/domain/services/UserSaverTest.java
+ com.ccm.user.user.domain.services.UserSaverTest
 com/ccm/pokemon/pokemon/infrastructure/listener/RabbitMqEventListenerIT.java
  com.ccm.pokemon.pokemon.infrastructure.listener.RabbitMqEventListenerIT
 com/ccm/pokemon/pokemon/application/FavouritePokemonAddedNotifierUseCaseTest.java
  com.ccm.pokemon.pokemon.application.FavouritePokemonAddedNotifierUseCaseTest
-com/ccm/pokemon/pokemon/infrastructure/repository/InMemoryPokemonRepositoryTest.java
- com.ccm.pokemon.pokemon.infrastructure.repository.InMemoryPokemonRepositoryTest
-com/ccm/pokemon/pokemon/domain/services/PokemonFinderTest.java
- com.ccm.pokemon.pokemon.domain.services.PokemonFinderTest
+com/ccm/user/user/application/usecases/AddUserUseCaseTest.java
+ com.ccm.user.user.application.usecases.AddUserUseCaseTest
 com/ccm/pokemon/pokemon/domain/services/PokemonSaverTest.java
  com.ccm.pokemon.pokemon.domain.services.PokemonSaverTest
+com/ccm/user/user/domain/services/AddFavouritePokemonToUserTest.java
+ com.ccm.user.user.domain.services.AddFavouritePokemonToUserTest
+com/ccm/pokemon/pokemon/infrastructure/api/PokemonRetrieverApiClientTest.java
+ com.ccm.pokemon.pokemon.infrastructure.api.PokemonRetrieverApiClientTest
+com/ccm/user/user/infrastructure/publisher/RabbitMqEventPublisherIT.java
+ com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisherIT
+com/ccm/pokemon/pokemon/domain/services/FavouritePokemonCounterUpdaterTest.java
+ com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdaterTest
+com/ccm/user/user/infrastructure/converter/ObjectToJsonStringConverterTest.java
+ com.ccm.user.user.infrastructure.converter.ObjectToJsonStringConverterTest
+com/ccm/user/user/application/usecases/AddFavouritePokemonUseCaseTest.java
+ com.ccm.user.user.application.usecases.AddFavouritePokemonUseCaseTest
+com/ccm/user/user/infrastructure/controller/UserControllerTest.java
+ com.ccm.user.user.infrastructure.controller.UserControllerTest
+com/ccm/pokemon/pokemon/domain/services/PokemonFinderTest.java
+ com.ccm.pokemon.pokemon.domain.services.PokemonFinderTest
+com/ccm/pokemon/pokemon/infrastructure/controller/PokemonControllerTest.java
+ com.ccm.pokemon.pokemon.infrastructure.controller.PokemonControllerTest
+com/ccm/pokemon/pokemon/infrastructure/repository/InMemoryPokemonRepositoryTest.java
+ com.ccm.pokemon.pokemon.infrastructure.repository.InMemoryPokemonRepositoryTest

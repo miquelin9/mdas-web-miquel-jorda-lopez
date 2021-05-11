@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ccm.user.user.domain.services.UserCreatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-11T23:05:24" hostname="debian" time="0.013">
+  <properties/>
+  <testcase name="verify_createUser_callsToMethods()" classname="com.ccm.user.user.domain.services.UserCreatorTest" time="0.007"/>
+  <testcase name="verify_createUser_throwsUserAlreadyExistsException_whenUserIsAlreadyCreated()" classname="com.ccm.user.user.domain.services.UserCreatorTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

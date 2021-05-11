@@ -34,7 +34,7 @@ public class RabbitMqEventPublisherIT  {
 
         tested.publish(message);
 
-        Mockito.verify(favouritePokemonAddedNotifierUseCase, Mockito.timeout(1000).times(1))
+        Mockito.verify(favouritePokemonAddedNotifierUseCase, Mockito.timeout(2500).times(1))
                 .addFavouritePokemonCounter(any());
     }
 }

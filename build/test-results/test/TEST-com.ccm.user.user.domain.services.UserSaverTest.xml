@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ccm.user.user.domain.services.UserSaverTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-11T23:05:24" hostname="debian" time="0.007">
+  <properties/>
+  <testcase name="verify_saveUser_callsToMethods()" classname="com.ccm.user.user.domain.services.UserSaverTest" time="0.004"/>
+  <testcase name="verify_saveUser_throwsUserNotFoundException()" classname="com.ccm.user.user.domain.services.UserSaverTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

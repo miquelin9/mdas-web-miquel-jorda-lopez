@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ccm.user.user.infrastructure.repository.InMemoryUserRepositoryTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-05-11T23:05:20" hostname="debian" time="3.663">
+  <properties/>
+  <testcase name="shouldUpdateUser()" classname="com.ccm.user.user.infrastructure.repository.InMemoryUserRepositoryTest" time="1.037"/>
+  <testcase name="shouldFindAUserById()" classname="com.ccm.user.user.infrastructure.repository.InMemoryUserRepositoryTest" time="0.272"/>
+  <testcase name="shouldCreateUser()" classname="com.ccm.user.user.infrastructure.repository.InMemoryUserRepositoryTest" time="0.196"/>
+  <testcase name="shouldDeleteUser()" classname="com.ccm.user.user.infrastructure.repository.InMemoryUserRepositoryTest" time="0.236"/>
+  <testcase name="shouldCheckIfAUserExistsById()" classname="com.ccm.user.user.infrastructure.repository.InMemoryUserRepositoryTest" time="0.271"/>
+  <testcase name="shouldSearchUsersByName()" classname="com.ccm.user.user.infrastructure.repository.InMemoryUserRepositoryTest" time="1.628"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[may. 12, 2021 1:05:20 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.BaseRabbitMqListener onMessage
+INFO: ================= Message received =================
+may. 12, 2021 1:05:20 A. M. com.ccm.pokemon.pokemon.application.useCases.FavouritePokemonAddedNotifierUseCase addFavouritePokemonCounter
+INFO: FavouritePokemonAddedNotifierUseCase called
+may. 12, 2021 1:05:20 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
+INFO: Trying to update pokemon 'scyther' favourite counter
+may. 12, 2021 1:05:20 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
+INFO: Pokemon 'scyther' favourite counter updated to 1
+]]></system-err>
+</testsuite>

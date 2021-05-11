@@ -1,34 +1,36 @@
 package com.ccm.pokemon.pokemon.infrastructure.repository;
 
-import com.ccm.BaseTest;
 import com.ccm.pokemon.pokemon.domain.aggregate.Pokemon;
 import com.ccm.pokemon.pokemon.domain.vo.Name;
 import com.ccm.pokemon.pokemon.domain.vo.PokemonId;
 import com.ccm.pokemon.pokemon.domain.vo.PokemonType;
+import io.quarkus.runtime.StartupEvent;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import javax.enterprise.event.Observes;
 import javax.inject.Inject;
 
 @QuarkusTest
-public class InMemoryPokemonRepositoryTest extends BaseTest {
+public class InMemoryPokemonRepositoryTest {
 
-    @Inject
     InMemoryPokemonRepository tested;
 
-    @Override
-    protected void setUp () {
+    protected void setUpTest () {
         Pokemon pokemon = new Pokemon(
                 new Name("TestPokemon"),
                 new PokemonId(1)
         );
 
+        tested = new InMemoryPokemonRepository();
         tested.create(pokemon);
     }
 
     @Test
     public void verify_find_returnsPokemon_whenPokemonIsStoragedAndPokemonIdIsPassed () {
+        setUpTest();
+
         Pokemon result = tested.find(new PokemonId(1));
 
         Assertions.assertNotNull(result);
@@ -38,6 +40,8 @@ public class InMemoryPokemonRepositoryTest extends BaseTest {
 
     @Test
     public void verify_find_returnsNull_whenPokemonDoesNotExists () {
+        setUpTest();
+
         Pokemon result = tested.find(new PokemonId(2));
 
         Assertions.assertNull(result);
@@ -45,6 +49,8 @@ public class InMemoryPokemonRepositoryTest extends BaseTest {
 
     @Test
     public void verify_exists_returnsTrue_whenPokemonExists () {
+        setUpTest();
+
         boolean result = tested.exists(new PokemonId(1));
 
         Assertions.assertTrue(result);
@@ -52,6 +58,8 @@ public class InMemoryPokemonRepositoryTest extends BaseTest {
 
     @Test
     public void verify_exists_returnsFalse_whenPokemonDoesNotExist () {
+        setUpTest();
+
         boolean result = tested.exists(new PokemonId(2));
 
         Assertions.assertFalse(result);
@@ -59,6 +67,8 @@ public class InMemoryPokemonRepositoryTest extends BaseTest {
 
     @Test
     public void verify_update_updatesPokemon_whenPokemonExist () {
+        setUpTest();
+
         Pokemon newPokemon = new Pokemon(
                 new Name("newPokemon"),
                 new PokemonId(1)

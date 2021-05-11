@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ccm.user.user.application.usecases.AddFavouritePokemonUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-05-11T23:05:19" hostname="debian" time="0.12">
+  <properties/>
+  <testcase name="verify_addFavouritePokemon_throwsFavouritePokemonAlreadyExistsException()" classname="com.ccm.user.user.application.usecases.AddFavouritePokemonUseCaseTest" time="0.045"/>
+  <testcase name="verify_addFavouritePokemon_CallsToMethods()" classname="com.ccm.user.user.application.usecases.AddFavouritePokemonUseCaseTest" time="0.064"/>
+  <testcase name="verify_addFavouritePokemon_throwsUserNotFoundException()" classname="com.ccm.user.user.application.usecases.AddFavouritePokemonUseCaseTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[may. 12, 2021 1:05:20 A. M. com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher publish
+INFO: ================= Message Published: {"pokemonId":123} =================
+]]></system-err>
+</testsuite>

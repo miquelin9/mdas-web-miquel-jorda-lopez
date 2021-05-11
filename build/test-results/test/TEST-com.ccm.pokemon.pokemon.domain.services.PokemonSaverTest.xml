@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ccm.pokemon.pokemon.domain.services.PokemonSaverTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-11T16:40:34" hostname="debian" time="1.458">
+<testsuite name="com.ccm.pokemon.pokemon.domain.services.PokemonSaverTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-11T23:05:19" hostname="debian" time="0.085">
   <properties/>
-  <testcase name="verify_persist_updatesPokemon_whenIsFoundInRepository()" classname="com.ccm.pokemon.pokemon.domain.services.PokemonSaverTest" time="1.458"/>
+  <testcase name="verify_persist_updatesPokemon_whenIsFoundInRepository()" classname="com.ccm.pokemon.pokemon.domain.services.PokemonSaverTest" time="0.077"/>
+  <testcase name="verify_persist_createsPokemon_whenIsNotFoundInRepository()" classname="com.ccm.pokemon.pokemon.domain.services.PokemonSaverTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[may. 11, 2021 6:40:30 P. M. org.jboss.threads.Version <clinit>
-INFO: JBoss Threads version 3.2.0.Final
-may. 11, 2021 6:40:34 P. M. org.jboss.threads.Version <clinit>
-INFO: JBoss Threads version 3.2.0.Final
-may. 11, 2021 6:40:34 P. M. com.ccm.pokemon.pokemon.infrastructure.listener.RabbitMqEventListener onStart
-INFO: RabbitMqEventListener is starting...
-may. 11, 2021 6:40:34 P. M. com.ccm.pokemon.pokemon.infrastructure.listener.BaseRabbitMqListener configureListener
-INFO: RabbitMqEventListener is about to be configured
-may. 11, 2021 6:40:34 P. M. com.ccm.user.user.infrastructure.rabbitmq.RabbitMqEventPublisher onStart
-INFO: RabbitMqEventPublisher starting...
-may. 11, 2021 6:40:34 P. M. com.ccm.user.user.infrastructure.rabbitmq.BaseRabbitMqEventPublisher configurePublisher
-INFO: RabbitMqEventPublisher being configured
-may. 11, 2021 6:40:34 P. M. io.quarkus.bootstrap.runner.Timing printStartupTime
-INFO: Quarkus 1.11.3.Final on JVM started in 5.761s. Listening on: http://localhost:8081
-may. 11, 2021 6:40:34 P. M. io.quarkus.bootstrap.runner.Timing printStartupTime
-INFO: Profile test activated. 
-may. 11, 2021 6:40:34 P. M. io.quarkus.bootstrap.runner.Timing printStartupTime
-INFO: Installed features: [cdi, mutiny, rest-client, rest-client-jsonb, resteasy, resteasy-jsonb, smallrye-context-propagation, smallrye-reactive-messaging, vertx]
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
