@@ -8,6 +8,7 @@ import com.ccm.pokemon.pokemon.domain.exceptions.NetworkConnectionException;
 import com.ccm.pokemon.pokemon.domain.exceptions.TimeoutException;
 import com.ccm.pokemon.pokemon.infrastructure.parsers.PokemonToJsonParser;
 import com.ccm.pokemon.pokemon.domain.exceptions.PokemonNotFoundException;
+import org.jboss.logging.Logger;
 
 import javax.enterprise.inject.Model;
 import javax.inject.Inject;
@@ -19,16 +20,18 @@ import javax.ws.rs.core.Response;
 @Model
 @Path("/pokemon")
 public class PokemonController {
+    private final Logger LOGGER = Logger.getLogger(PokemonController.class);
+
     @Inject
     GetPokemonUseCase getPokemonUseCase;
     @Inject
     PokemonToJsonParser pokemonToJsonParser;
-    @Inject
-    FavouritePokemonAddedNotifierUseCase favouritePokemonAddedNotifierUseCase;
 
     @GET
     @Path("/get/{id}")
     public Response getPokemon(@PathParam("id") int id) {
+        LOGGER.info("PokemonController Get Pokemon called with pokemonId:" + id);
+
         try {
             Pokemon result = getPokemonUseCase.getPokemonByPokemonId(new PokemonDto(id));
 

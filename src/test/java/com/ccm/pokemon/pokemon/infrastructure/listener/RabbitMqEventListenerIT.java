@@ -1,7 +1,7 @@
 package com.ccm.pokemon.pokemon.infrastructure.listener;
 
 import com.ccm.pokemon.pokemon.domain.aggregate.Pokemon;
-import com.ccm.pokemon.pokemon.domain.valueObjects.PokemonId;
+import com.ccm.pokemon.pokemon.domain.vo.PokemonId;
 import com.ccm.pokemon.pokemon.infrastructure.repository.InMemoryPokemonRepository;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.Assert;

@@ -1,21 +1,12 @@
 package com.ccm.pokemon.pokemon.domain.services;
 
 import com.ccm.pokemon.pokemon.domain.aggregate.Pokemon;
-import com.ccm.pokemon.pokemon.domain.valueObjects.Name;
-import com.ccm.pokemon.pokemon.domain.valueObjects.PokemonId;
-import com.ccm.user.user.domain.aggregate.User;
-import com.ccm.user.user.domain.exceptions.FavouritePokemonAlreadyExistsException;
-import com.ccm.user.user.domain.exceptions.UserNotFoundException;
-import com.ccm.user.user.domain.services.UserFinder;
-import com.ccm.user.user.domain.services.UserSaver;
-import com.ccm.user.user.domain.vo.FavouritePokemonId;
-import com.ccm.user.user.domain.vo.UserId;
-import com.ccm.user.user.domain.vo.UserName;
+import com.ccm.pokemon.pokemon.domain.vo.Name;
+import com.ccm.pokemon.pokemon.domain.vo.PokemonId;
 import io.quarkus.test.junit.QuarkusMock;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
 import javax.inject.Inject;
 

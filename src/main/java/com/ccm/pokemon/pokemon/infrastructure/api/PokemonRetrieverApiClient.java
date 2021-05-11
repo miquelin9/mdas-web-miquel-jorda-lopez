@@ -5,7 +5,7 @@ import com.ccm.pokemon.pokemon.domain.exceptions.NetworkConnectionException;
 import com.ccm.pokemon.pokemon.domain.exceptions.TimeoutException;
 import com.ccm.pokemon.pokemon.domain.exceptions.UnknownException;
 import com.ccm.pokemon.pokemon.domain.interfaces.PokemonRetrieverClient;
-import com.ccm.pokemon.pokemon.domain.valueObjects.PokemonId;
+import com.ccm.pokemon.pokemon.domain.vo.PokemonId;
 import com.ccm.pokemon.pokemon.infrastructure.parsers.JsonToPokemonParser;
 import com.ccm.pokemon.pokemon.domain.exceptions.PokemonNotFoundException;
 import org.apache.http.HttpEntity;

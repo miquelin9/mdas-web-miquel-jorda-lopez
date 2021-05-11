@@ -1,12 +1,6 @@
 package com.ccm.pokemon.pokemon.infrastructure.parsers;
 
 import com.ccm.pokemon.pokemon.application.dto.PokemonDto;
-import com.ccm.pokemon.pokemon.domain.aggregate.Pokemon;
-import com.ccm.pokemon.pokemon.domain.valueObjects.Name;
-import com.ccm.pokemon.pokemon.domain.valueObjects.PokemonId;
-import com.ccm.pokemon.pokemon.domain.valueObjects.PokemonType;
-import io.smallrye.mutiny.streams.utils.Casts;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 

@@ -5,7 +5,7 @@ import com.ccm.pokemon.pokemon.domain.exceptions.NetworkConnectionException;
 import com.ccm.pokemon.pokemon.domain.exceptions.TimeoutException;
 import com.ccm.pokemon.pokemon.domain.exceptions.UnknownException;
 import com.ccm.pokemon.pokemon.domain.services.PokemonFinder;
-import com.ccm.pokemon.pokemon.domain.valueObjects.PokemonId;
+import com.ccm.pokemon.pokemon.domain.vo.PokemonId;
 import com.ccm.pokemon.pokemon.domain.exceptions.PokemonNotFoundException;
 
 import javax.enterprise.context.ApplicationScoped;

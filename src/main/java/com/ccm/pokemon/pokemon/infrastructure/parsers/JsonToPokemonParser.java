@@ -1,9 +1,9 @@
 package com.ccm.pokemon.pokemon.infrastructure.parsers;
 
 import com.ccm.pokemon.pokemon.domain.aggregate.Pokemon;
-import com.ccm.pokemon.pokemon.domain.valueObjects.Name;
-import com.ccm.pokemon.pokemon.domain.valueObjects.PokemonId;
-import com.ccm.pokemon.pokemon.domain.valueObjects.PokemonType;
+import com.ccm.pokemon.pokemon.domain.vo.Name;
+import com.ccm.pokemon.pokemon.domain.vo.PokemonId;
+import com.ccm.pokemon.pokemon.domain.vo.PokemonType;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 

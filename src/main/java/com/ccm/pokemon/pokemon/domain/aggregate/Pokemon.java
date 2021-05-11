@@ -1,8 +1,6 @@
 package com.ccm.pokemon.pokemon.domain.aggregate;
 
-import com.ccm.pokemon.pokemon.domain.valueObjects.*;
-
-import java.util.Objects;
+import com.ccm.pokemon.pokemon.domain.vo.*;
 
 public class Pokemon {
 

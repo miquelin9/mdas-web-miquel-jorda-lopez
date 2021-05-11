@@ -2,7 +2,7 @@ package com.ccm.pokemon.pokemon.infrastructure.repository;
 
 import com.ccm.pokemon.pokemon.domain.aggregate.Pokemon;
 import com.ccm.pokemon.pokemon.domain.interfaces.PokemonRepository;
-import com.ccm.pokemon.pokemon.domain.valueObjects.PokemonId;
+import com.ccm.pokemon.pokemon.domain.vo.PokemonId;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;

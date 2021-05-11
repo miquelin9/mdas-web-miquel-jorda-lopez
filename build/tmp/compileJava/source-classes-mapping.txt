@@ -1,29 +1,29 @@
 com/ccm/user/user/domain/vo/FavouritePokemons.java
  com.ccm.user.user.domain.vo.FavouritePokemons
-com/ccm/pokemon/pokemon/application/useCases/FavouritePokemonAddedNotifierUseCase.java
- com.ccm.pokemon.pokemon.application.useCases.FavouritePokemonAddedNotifierUseCase
+com/ccm/user/user/domain/exceptions/UserNotFoundException.java
+ com.ccm.user.user.domain.exceptions.UserNotFoundException
 com/ccm/user/user/domain/services/AddFavouritePokemonToUser.java
  com.ccm.user.user.domain.services.AddFavouritePokemonToUser
 com/ccm/user/user/domain/vo/FavouritePokemonId.java
  com.ccm.user.user.domain.vo.FavouritePokemonId
 com/ccm/user/user/application/dto/UserDTO.java
  com.ccm.user.user.application.dto.UserDTO
-com/ccm/user/user/infrastructure/controller/UserController.java
- com.ccm.user.user.infrastructure.controller.UserController
-com/ccm/pokemon/pokemon/domain/interfaces/PokemonRetrieverClient.java
- com.ccm.pokemon.pokemon.domain.interfaces.PokemonRetrieverClient
-com/ccm/pokemon/pokemon/domain/valueObjects/PokemonType.java
- com.ccm.pokemon.pokemon.domain.valueObjects.PokemonType
-com/ccm/pokemon/pokemon/application/useCases/GetPokemonUseCase.java
- com.ccm.pokemon.pokemon.application.useCases.GetPokemonUseCase
+com/ccm/pokemon/pokemon/infrastructure/controller/PokemonController.java
+ com.ccm.pokemon.pokemon.infrastructure.controller.PokemonController
+com/ccm/user/user/domain/exceptions/UserAlreadyExistsException.java
+ com.ccm.user.user.domain.exceptions.UserAlreadyExistsException
+com/ccm/user/user/domain/services/objectmother/UserIdMother.java
+ com.ccm.user.user.domain.services.objectmother.UserIdMother
+com/ccm/pokemon/pokemonTypes/domain/valueObjects/PokemonId.java
+ com.ccm.pokemon.pokemonTypes.domain.valueObjects.PokemonId
 com/ccm/user/user/domain/services/objectmother/UsersMother.java
  com.ccm.user.user.domain.services.objectmother.UsersMother
 com/ccm/user/user/domain/entities/Message.java
  com.ccm.user.user.domain.entities.Message
-com/ccm/pokemon/pokemon/domain/services/FavouritePokemonCounterUpdater.java
- com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater
-com/ccm/pokemon/pokemon/infrastructure/parsers/PokemonToJsonParser.java
- com.ccm.pokemon.pokemon.infrastructure.parsers.PokemonToJsonParser
+com/ccm/user/user/domain/services/UserCreator.java
+ com.ccm.user.user.domain.services.UserCreator
+com/ccm/user/user/domain/services/EventPublisher.java
+ com.ccm.user.user.domain.services.EventPublisher
 com/ccm/user/user/domain/aggregate/User.java
  com.ccm.user.user.domain.aggregate.User
 com/ccm/user/user/infrastructure/converter/ObjectToJsonStringConverter.java
@@ -34,14 +34,14 @@ com/ccm/pokemon/pokemonTypes/domain/valueObjects/Name.java
  com.ccm.pokemon.pokemonTypes.domain.valueObjects.Name
 com/ccm/user/user/domain/interfaces/UserRepository.java
  com.ccm.user.user.domain.interfaces.UserRepository
-com/ccm/pokemon/pokemon/infrastructure/repository/InMemoryPokemonRepository.java
- com.ccm.pokemon.pokemon.infrastructure.repository.InMemoryPokemonRepository
+com/ccm/user/user/infrastructure/publisher/BaseRabbitMqEventPublisher.java
+ com.ccm.user.user.infrastructure.publisher.BaseRabbitMqEventPublisher
 com/ccm/user/user/domain/exceptions/FavouritePokemonAlreadyExistsException.java
  com.ccm.user.user.domain.exceptions.FavouritePokemonAlreadyExistsException
-com/ccm/pokemon/pokemon/infrastructure/api/PokemonRetrieverApiClient.java
- com.ccm.pokemon.pokemon.infrastructure.api.PokemonRetrieverApiClient
-com/ccm/pokemon/pokemon/infrastructure/parsers/JsonToPokemonDTOParser.java
- com.ccm.pokemon.pokemon.infrastructure.parsers.JsonToPokemonDTOParser
+com/ccm/pokemon/pokemon/application/dto/PokemonDto.java
+ com.ccm.pokemon.pokemon.application.dto.PokemonDto
+com/ccm/pokemon/pokemonTypes/infrastructure/parser/JsonPokemonTypeParser.java
+ com.ccm.pokemon.pokemonTypes.infrastructure.parser.JsonPokemonTypeParser
 com/ccm/pokemon/pokemonTypes/infrastructure/client/PokemonTypeGetterClient.java
  com.ccm.pokemon.pokemonTypes.infrastructure.client.PokemonTypeGetterClient
 com/ccm/pokemon/pokemon/domain/exceptions/UnknownException.java
@@ -56,8 +56,8 @@ com/ccm/pokemon/pokemon/domain/exceptions/PokemonNotFoundException.java
  com.ccm.pokemon.pokemon.domain.exceptions.PokemonNotFoundException
 com/ccm/user/user/domain/services/UserSaver.java
  com.ccm.user.user.domain.services.UserSaver
-com/ccm/pokemon/pokemon/domain/interfaces/PokemonRepository.java
- com.ccm.pokemon.pokemon.domain.interfaces.PokemonRepository
+com/ccm/user/user/domain/services/objectmother/UserMother.java
+ com.ccm.user.user.domain.services.objectmother.UserMother
 com/ccm/pokemon/pokemonTypes/infrastructure/controller/PokemonControllerOld.java
  com.ccm.pokemon.pokemonTypes.infrastructure.controller.PokemonControllerOld
 com/ccm/user/user/application/dto/PokemonDTO.java
@@ -66,8 +66,8 @@ com/ccm/pokemon/pokemon/domain/exceptions/NetworkConnectionException.java
  com.ccm.pokemon.pokemon.domain.exceptions.NetworkConnectionException
 com/ccm/user/user/application/dto/UserFavouritePokemonDTO.java
  com.ccm.user.user.application.dto.UserFavouritePokemonDTO
-com/ccm/user/user/infrastructure/rabbitmq/RabbitMqEventPublisher.java
- com.ccm.user.user.infrastructure.rabbitmq.RabbitMqEventPublisher
+com/ccm/pokemon/pokemon/domain/services/FavouritePokemonCounterUpdater.java
+ com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater
 com/ccm/user/user/application/usecases/AddUserUseCase.java
  com.ccm.user.user.application.usecases.AddUserUseCase
 com/ccm/user/user/domain/vo/UserName.java
@@ -84,57 +84,57 @@ com/ccm/pokemon/pokemon/domain/exceptions/TimeoutException.java
  com.ccm.pokemon.pokemon.domain.exceptions.TimeoutException
 com/ccm/user/user/domain/interfaces/SimpleConverter.java
  com.ccm.user.user.domain.interfaces.SimpleConverter
-com/ccm/pokemon/pokemon/domain/valueObjects/Name.java
- com.ccm.pokemon.pokemon.domain.valueObjects.Name
-com/ccm/pokemon/pokemon/domain/valueObjects/PokemonTypes.java
- com.ccm.pokemon.pokemon.domain.valueObjects.PokemonTypes
+com/ccm/pokemon/pokemonTypes/domain/exceptions/PokemonNotFoundException.java
+ com.ccm.pokemon.pokemonTypes.domain.exceptions.PokemonNotFoundException
+com/ccm/pokemon/pokemonTypes/domain/interfaces/PokemonTypeParserInterface.java
+ com.ccm.pokemon.pokemonTypes.domain.interfaces.PokemonTypeParserInterface
 com/ccm/user/user/domain/services/objectmother/UserNameMother.java
  com.ccm.user.user.domain.services.objectmother.UserNameMother
 com/ccm/user/user/domain/interfaces/EventPublisherClient.java
  com.ccm.user.user.domain.interfaces.EventPublisherClient
-com/ccm/pokemon/pokemon/domain/valueObjects/FavouriteCounter.java
- com.ccm.pokemon.pokemon.domain.valueObjects.FavouriteCounter
-com/ccm/user/user/infrastructure/rabbitmq/BaseRabbitMqEventPublisher.java
- com.ccm.user.user.infrastructure.rabbitmq.BaseRabbitMqEventPublisher
-com/ccm/pokemon/pokemon/domain/services/PokemonFinder.java
- com.ccm.pokemon.pokemon.domain.services.PokemonFinder
-com/ccm/user/user/domain/services/EventPublisher.java
- com.ccm.user.user.domain.services.EventPublisher
-com/ccm/user/user/domain/services/UserCreator.java
- com.ccm.user.user.domain.services.UserCreator
-com/ccm/user/user/domain/services/objectmother/UserIdMother.java
- com.ccm.user.user.domain.services.objectmother.UserIdMother
-com/ccm/pokemon/pokemonTypes/domain/valueObjects/PokemonId.java
- com.ccm.pokemon.pokemonTypes.domain.valueObjects.PokemonId
-com/ccm/pokemon/pokemon/infrastructure/controller/PokemonController.java
- com.ccm.pokemon.pokemon.infrastructure.controller.PokemonController
 com/ccm/user/user/application/usecases/AddFavouritePokemonUseCase.java
  com.ccm.user.user.application.usecases.AddFavouritePokemonUseCase
-com/ccm/user/user/domain/exceptions/UserAlreadyExistsException.java
- com.ccm.user.user.domain.exceptions.UserAlreadyExistsException
+com/ccm/pokemon/pokemon/infrastructure/parsers/PokemonToJsonParser.java
+ com.ccm.pokemon.pokemon.infrastructure.parsers.PokemonToJsonParser
 com/ccm/user/user/domain/vo/UserId.java
  com.ccm.user.user.domain.vo.UserId
-com/ccm/user/user/domain/services/objectmother/UserMother.java
- com.ccm.user.user.domain.services.objectmother.UserMother
+com/ccm/pokemon/pokemon/infrastructure/repository/InMemoryPokemonRepository.java
+ com.ccm.pokemon.pokemon.infrastructure.repository.InMemoryPokemonRepository
+com/ccm/pokemon/pokemon/domain/vo/PokemonType.java
+ com.ccm.pokemon.pokemon.domain.vo.PokemonType
+com/ccm/pokemon/pokemon/infrastructure/api/PokemonRetrieverApiClient.java
+ com.ccm.pokemon.pokemon.infrastructure.api.PokemonRetrieverApiClient
+com/ccm/pokemon/pokemon/infrastructure/parsers/JsonToPokemonDTOParser.java
+ com.ccm.pokemon.pokemon.infrastructure.parsers.JsonToPokemonDTOParser
+com/ccm/pokemon/pokemon/application/useCases/FavouritePokemonAddedNotifierUseCase.java
+ com.ccm.pokemon.pokemon.application.useCases.FavouritePokemonAddedNotifierUseCase
 com/ccm/pokemon/pokemon/domain/services/PokemonSaver.java
  com.ccm.pokemon.pokemon.domain.services.PokemonSaver
+com/ccm/pokemon/pokemon/domain/vo/Name.java
+ com.ccm.pokemon.pokemon.domain.vo.Name
 com/ccm/pokemon/pokemon/infrastructure/parsers/JsonToPokemonParser.java
  com.ccm.pokemon.pokemon.infrastructure.parsers.JsonToPokemonParser
-com/ccm/user/user/domain/exceptions/UserNotFoundException.java
- com.ccm.user.user.domain.exceptions.UserNotFoundException
-com/ccm/pokemon/pokemonTypes/infrastructure/parser/JsonPokemonTypeParser.java
- com.ccm.pokemon.pokemonTypes.infrastructure.parser.JsonPokemonTypeParser
-com/ccm/pokemon/pokemon/application/dto/PokemonDto.java
- com.ccm.pokemon.pokemon.application.dto.PokemonDto
+com/ccm/pokemon/pokemon/domain/interfaces/PokemonRepository.java
+ com.ccm.pokemon.pokemon.domain.interfaces.PokemonRepository
+com/ccm/pokemon/pokemon/domain/services/PokemonFinder.java
+ com.ccm.pokemon.pokemon.domain.services.PokemonFinder
+com/ccm/pokemon/pokemon/domain/interfaces/PokemonRetrieverClient.java
+ com.ccm.pokemon.pokemon.domain.interfaces.PokemonRetrieverClient
+com/ccm/user/user/infrastructure/controller/UserController.java
+ com.ccm.user.user.infrastructure.controller.UserController
 com/ccm/pokemon/pokemon/domain/aggregate/Pokemon.java
  com.ccm.pokemon.pokemon.domain.aggregate.Pokemon
-com/ccm/pokemon/pokemon/domain/valueObjects/PokemonId.java
- com.ccm.pokemon.pokemon.domain.valueObjects.PokemonId
+com/ccm/pokemon/pokemon/domain/vo/PokemonTypes.java
+ com.ccm.pokemon.pokemon.domain.vo.PokemonTypes
+com/ccm/pokemon/pokemon/domain/vo/FavouriteCounter.java
+ com.ccm.pokemon.pokemon.domain.vo.FavouriteCounter
+com/ccm/pokemon/pokemon/application/useCases/GetPokemonUseCase.java
+ com.ccm.pokemon.pokemon.application.useCases.GetPokemonUseCase
 com/ccm/pokemon/pokemon/infrastructure/listener/RabbitMqEventListener.java
  com.ccm.pokemon.pokemon.infrastructure.listener.RabbitMqEventListener
-com/ccm/pokemon/pokemonTypes/domain/interfaces/PokemonTypeParserInterface.java
- com.ccm.pokemon.pokemonTypes.domain.interfaces.PokemonTypeParserInterface
-com/ccm/pokemon/pokemonTypes/domain/exceptions/PokemonNotFoundException.java
- com.ccm.pokemon.pokemonTypes.domain.exceptions.PokemonNotFoundException
+com/ccm/pokemon/pokemon/domain/vo/PokemonId.java
+ com.ccm.pokemon.pokemon.domain.vo.PokemonId
 com/ccm/Application.java
  com.ccm.Application
+com/ccm/user/user/infrastructure/publisher/RabbitMqEventPublisher.java
+ com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher
