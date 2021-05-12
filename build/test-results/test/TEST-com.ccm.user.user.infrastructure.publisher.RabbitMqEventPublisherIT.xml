@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisherIT" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-12T00:19:10" hostname="debian" time="0.217">
+<testsuite name="com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisherIT" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-12T00:25:12" hostname="debian" time="0.204">
   <properties/>
-  <testcase name="verify_publish_sendsProperlyMessageToQueue_whenMessageIsCorrect()" classname="com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisherIT" time="0.217"/>
+  <testcase name="verify_publish_sendsProperlyMessageToQueue_whenMessageIsCorrect()" classname="com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisherIT" time="0.204"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[may. 12, 2021 2:19:10 A. M. com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher publish
+  <system-err><![CDATA[may. 12, 2021 2:25:12 A. M. com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher publish
 INFO: ================= Message Published: {"pokemonId":1} =================
-may. 12, 2021 2:19:10 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.RabbitMqEventListener handle
+may. 12, 2021 2:25:12 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.RabbitMqEventListener handle
 ERROR: Pokemon '1234' not found
-may. 12, 2021 2:19:10 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.BaseRabbitMqListener onMessage
+may. 12, 2021 2:25:12 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.BaseRabbitMqListener onMessage
 INFO: ================= Message received =================
 ]]></system-err>
 </testsuite>

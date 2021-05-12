@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ccm.user.user.domain.services.EventPublisherTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-12T00:19:10" hostname="debian" time="0.032">
+<testsuite name="com.ccm.user.user.domain.services.EventPublisherTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-12T00:25:12" hostname="debian" time="0.065">
   <properties/>
-  <testcase name="verify_publish_callsMethods_whenMessageIsPassed()" classname="com.ccm.user.user.domain.services.EventPublisherTest" time="0.016"/>
+  <testcase name="verify_publish_callsMethods_whenMessageIsPassed()" classname="com.ccm.user.user.domain.services.EventPublisherTest" time="0.049"/>
   <testcase name="verify_publish_throwsIOException_whenEventPublisherClientThrowsIOException()" classname="com.ccm.user.user.domain.services.EventPublisherTest" time="0.014"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

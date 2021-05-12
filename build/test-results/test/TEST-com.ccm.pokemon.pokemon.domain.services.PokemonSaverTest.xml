@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ccm.pokemon.pokemon.domain.services.PokemonSaverTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-12T00:19:05" hostname="debian" time="0.032">
+<testsuite name="com.ccm.pokemon.pokemon.domain.services.PokemonSaverTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-12T00:25:07" hostname="debian" time="0.047">
   <properties/>
-  <testcase name="verify_persist_updatesPokemon_whenIsFoundInRepository()" classname="com.ccm.pokemon.pokemon.domain.services.PokemonSaverTest" time="0.027"/>
+  <testcase name="verify_persist_updatesPokemon_whenIsFoundInRepository()" classname="com.ccm.pokemon.pokemon.domain.services.PokemonSaverTest" time="0.042"/>
   <testcase name="verify_persist_createsPokemon_whenIsNotFoundInRepository()" classname="com.ccm.pokemon.pokemon.domain.services.PokemonSaverTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

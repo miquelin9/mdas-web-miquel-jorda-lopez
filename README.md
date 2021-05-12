@@ -1,4 +1,6 @@
-# Reto Pokémon: Parte individual
+# Reto Pokémon: Parte individual - Miquel Jordà Lopez
+
+---
 ## Pre-requisitos
 
 * Tener Java 11 instalado
@@ -7,7 +9,9 @@
   Es muy probable que la terminal muestre que no tenemos permisos para ejecutarlo, por lo que habrá que cambiarlos mediante `chmod u+x gradlew`
 * Tener algún programa como Postman (la parte de la API no es necesario probarla con Postman, pero este tipo de programas hace que dicha labor sea más sencilla por la interfaz visual de este tipo de aplicaciones como Postman)
 
-## Puesta en marcha de RabbitMQ
+---
+## Preparación
+### Puesta en marcha de RabbitMQ
 
 1) Primero habrá que pullear la imagen docker de RabbitMQ. Ejecutar en consola el siguiente comando:
 ```
@@ -15,25 +19,33 @@ docker pull rabbitmq:management
 ```
 2) Una vez se haya descargado la imagen, habrá que iniciar el contenedor exponiendo los puertos necesarios. Ejecutar el siguiente comando:
 ```
-docker run --name=rabbitmq -p 5672:5672 -p 15672:15672 88b2e6b105da
+docker run --name=rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
 ```
 3) Para comprobar que el contenedor está correctamente en marcha, ir al siguiente link y verificar que el portal de
 RabbitMQ está activo http://localhost:15672. Las credenciales son **guest** y **guest** para usuario y contraseña respectivamente.
    
-## Puesta en marcha de la aplicación
+### Puesta en marcha de la aplicación
 
-1) Para construir la aplicación, ejecutar `./gradlew clean build`
-2) Para lanzar la aplicación, ejecutar `java -jar build/mdas-web-miquel-jorda-1.0-SNAPSHOT-runner.jar`
-
+1) Para construir la aplicación, ejecutar 
+   ```
+   ./gradlew clean build
+   ```
+2) Para lanzar la aplicación, ejecutar 
+   ```
+   java -jar build/mdas-web-miquel-jorda-1.0-SNAPSHOT-runner.jar
+   ```
+---
 ## Parar la aplicación
 
 La aplicación se podrá parar por completo pulsando la combinación de teclas CTRL+C
 
+---
 ## Ejecutar los test
 
 A pesar de que los tests se ejecutan en el momento de ejecutar el comando `./gradlew build`, también se pueden
-ejecutar mediante el comando `./gradlew clean test`.
+ejecutar mediante el comando `./gradlew test`.
 
+---
 ## Probar la aplicación
 
 La aplicación se puede usar haciendo peticiones http, usando por ejemplo ***Postman***.
@@ -56,12 +68,17 @@ Esta petición tiene un parámetro en la query el cual hace referencia a la ***i
 ### Curl
 Por si hiciese falta, a continuación se detallan las peticiones cURL, presentes en la colección descrita anteriormente.
 #### Create User
-`curl --location --request POST 'http://localhost:8081/user/add?name=Alba&userId=1'`
+```
+curl --location --request POST 'http://localhost:8081/user/add?name=Alba&userId=1'
+```
 #### Add Favourite Pokemon to User
-`curl --location --request POST 'http://localhost:8081/user/favouritepokemon/add?id=3' \
---header 'id: 1'`
+```
+curl --location --request POST 'http://localhost:8081/user/favouritepokemon/add?id=3' --header 'id: 1'
+```
 #### Get Pokemon
-`curl --location --request GET 'http://localhost:8081/pokemon/get/3'`
+```
+curl --location --request GET 'http://localhost:8081/pokemon/get/3'
+```
 
 ---
 >NOTA:

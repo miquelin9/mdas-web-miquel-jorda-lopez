@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ccm.pokemon.pokemon.application.FavouritePokemonAddedNotifierUseCaseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-12T00:18:59" hostname="debian" time="1.684">
+<testsuite name="com.ccm.pokemon.pokemon.application.FavouritePokemonAddedNotifierUseCaseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-12T00:25:01" hostname="debian" time="1.365">
   <properties/>
-  <testcase name="verify_addFavouritePokemonCounter_methodsCalled()" classname="com.ccm.pokemon.pokemon.application.FavouritePokemonAddedNotifierUseCaseTest" time="1.668"/>
-  <testcase name="verify_addFavouritePokemonCounter_throwsPokemonNotFound_whenPokemonDoesNotExist()" classname="com.ccm.pokemon.pokemon.application.FavouritePokemonAddedNotifierUseCaseTest" time="0.014"/>
+  <testcase name="verify_addFavouritePokemonCounter_methodsCalled()" classname="com.ccm.pokemon.pokemon.application.FavouritePokemonAddedNotifierUseCaseTest" time="1.354"/>
+  <testcase name="verify_addFavouritePokemonCounter_throwsPokemonNotFound_whenPokemonDoesNotExist()" classname="com.ccm.pokemon.pokemon.application.FavouritePokemonAddedNotifierUseCaseTest" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[may. 12, 2021 2:18:54 A. M. org.jboss.threads.Version <clinit>
+  <system-err><![CDATA[may. 12, 2021 2:24:57 A. M. org.jboss.threads.Version <clinit>
 INFO: JBoss Threads version 3.2.0.Final
-may. 12, 2021 2:18:58 A. M. org.jboss.threads.Version <clinit>
+may. 12, 2021 2:25:00 A. M. org.jboss.threads.Version <clinit>
 INFO: JBoss Threads version 3.2.0.Final
-may. 12, 2021 2:18:58 A. M. com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher onStart
+may. 12, 2021 2:25:00 A. M. com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher onStart
 INFO: RabbitMqEventPublisher starting...
-may. 12, 2021 2:18:58 A. M. com.ccm.user.user.infrastructure.publisher.BaseRabbitMqEventPublisher configurePublisher
+may. 12, 2021 2:25:00 A. M. com.ccm.user.user.infrastructure.publisher.BaseRabbitMqEventPublisher configurePublisher
 INFO: RabbitMqEventPublisher being configured
-may. 12, 2021 2:18:59 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.RabbitMqEventListener onStart
+may. 12, 2021 2:25:01 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.RabbitMqEventListener onStart
 INFO: RabbitMqEventListener is starting...
-may. 12, 2021 2:18:59 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.BaseRabbitMqListener configureListener
+may. 12, 2021 2:25:01 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.BaseRabbitMqListener configureListener
 INFO: RabbitMqEventListener is about to be configured
-may. 12, 2021 2:18:59 A. M. io.quarkus.bootstrap.runner.Timing printStartupTime
-INFO: Quarkus 1.11.3.Final on JVM started in 5.780s. Listening on: http://localhost:8081
-may. 12, 2021 2:18:59 A. M. io.quarkus.bootstrap.runner.Timing printStartupTime
+may. 12, 2021 2:25:01 A. M. io.quarkus.bootstrap.runner.Timing printStartupTime
+INFO: Quarkus 1.11.3.Final on JVM started in 5.599s. Listening on: http://localhost:8081
+may. 12, 2021 2:25:01 A. M. io.quarkus.bootstrap.runner.Timing printStartupTime
 INFO: Profile test activated. 
-may. 12, 2021 2:18:59 A. M. io.quarkus.bootstrap.runner.Timing printStartupTime
+may. 12, 2021 2:25:01 A. M. io.quarkus.bootstrap.runner.Timing printStartupTime
 INFO: Installed features: [cdi, mutiny, rest-client, rest-client-jsonb, resteasy, resteasy-jsonb, smallrye-context-propagation, smallrye-reactive-messaging, vertx]
-may. 12, 2021 2:19:01 A. M. com.ccm.pokemon.pokemon.application.useCases.FavouritePokemonAddedNotifierUseCase addFavouritePokemonCounter
+may. 12, 2021 2:25:03 A. M. com.ccm.pokemon.pokemon.application.useCases.FavouritePokemonAddedNotifierUseCase addFavouritePokemonCounter
 INFO: FavouritePokemonAddedNotifierUseCase called
-may. 12, 2021 2:19:01 A. M. com.ccm.pokemon.pokemon.application.useCases.FavouritePokemonAddedNotifierUseCase addFavouritePokemonCounter
+may. 12, 2021 2:25:03 A. M. com.ccm.pokemon.pokemon.application.useCases.FavouritePokemonAddedNotifierUseCase addFavouritePokemonCounter
 INFO: FavouritePokemonAddedNotifierUseCase called
 ]]></system-err>
 </testsuite>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdaterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-12T00:19:05" hostname="debian" time="0.027">
+<testsuite name="com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdaterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-12T00:25:07" hostname="debian" time="0.024">
   <properties/>
-  <testcase name="verify_execute_updatesCounter_whenGetsAPokemon()" classname="com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdaterTest" time="0.027"/>
+  <testcase name="verify_execute_updatesCounter_whenGetsAPokemon()" classname="com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdaterTest" time="0.024"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[may. 12, 2021 2:19:05 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
+  <system-err><![CDATA[may. 12, 2021 2:25:07 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
 INFO: Trying to update pokemon 'testPokemon' favourite counter
-may. 12, 2021 2:19:05 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
+may. 12, 2021 2:25:07 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
 INFO: Pokemon 'testPokemon' favourite counter updated to 1
 ]]></system-err>
 </testsuite>

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.765s</div>
+<div class="counter">0.595s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,27 +79,27 @@
 </thead>
 <tr>
 <td class="success">shouldAddFavouritePokemon()</td>
-<td class="success">0.107s</td>
+<td class="success">0.078s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldAddUser()</td>
-<td class="success">0.109s</td>
+<td class="success">0.103s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldGetHttpCode403WhenAddingANewFavouritePokemon()</td>
-<td class="success">0.099s</td>
+<td class="success">0.126s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldGetHttpCode403WhenAddingANewUser()</td>
-<td class="success">0.176s</td>
+<td class="success">0.083s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldGetHttpCode409WhenAddingANewFavouritePokemon()</td>
-<td class="success">0.274s</td>
+<td class="success">0.205s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,36 +107,40 @@
 <div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
+<pre>may. 12, 2021 2:25:11 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
 INFO: Add User with name:tipoDeIncógnito and userId:1 called
-may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
+may. 12, 2021 2:25:11 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
 INFO: Add Favourite Pokemon with id:123 to user with id:1 called
-may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher publish
+may. 12, 2021 2:25:11 A. M. com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher publish
 INFO: ================= Message Published: {&quot;pokemonId&quot;:123} =================
-may. 12, 2021 2:19:09 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.BaseRabbitMqListener onMessage
+may. 12, 2021 2:25:11 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.BaseRabbitMqListener onMessage
 INFO: ================= Message received =================
-may. 12, 2021 2:19:09 A. M. com.ccm.pokemon.pokemon.application.useCases.FavouritePokemonAddedNotifierUseCase addFavouritePokemonCounter
+may. 12, 2021 2:25:11 A. M. com.ccm.pokemon.pokemon.application.useCases.FavouritePokemonAddedNotifierUseCase addFavouritePokemonCounter
 INFO: FavouritePokemonAddedNotifierUseCase called
-may. 12, 2021 2:19:09 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
+may. 12, 2021 2:25:11 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
 INFO: Trying to update pokemon 'scyther' favourite counter
-may. 12, 2021 2:19:09 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
+may. 12, 2021 2:25:11 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
 INFO: Pokemon 'scyther' favourite counter updated to 2
-may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
+may. 12, 2021 2:25:11 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
 INFO: Add Favourite Pokemon with id:123 to user with id:1 called
-may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
+may. 12, 2021 2:25:11 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
 INFO: Add User with name:tipoDeIncógnito and userId:123456789 called
-may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
+may. 12, 2021 2:25:11 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
 INFO: Add Favourite Pokemon with id:123 to user with id:9 called
-may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
+may. 12, 2021 2:25:11 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
 INFO: Add User with name:tipoDeIncógnito and userId:1 called
-may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
+may. 12, 2021 2:25:11 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
 INFO: Add User with name:tipoDeIncógnito and userId:1 called
-may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
+may. 12, 2021 2:25:12 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
 INFO: Add User with name:tipoDeIncógnito and userId:1 called
-may. 12, 2021 2:19:10 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
+may. 12, 2021 2:25:12 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
 INFO: Add Favourite Pokemon with id:1234 to user with id:1 called
-may. 12, 2021 2:19:10 A. M. com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher publish
+may. 12, 2021 2:25:12 A. M. com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher publish
 INFO: ================= Message Published: {&quot;pokemonId&quot;:1234} =================
+may. 12, 2021 2:25:12 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.BaseRabbitMqListener onMessage
+INFO: ================= Message received =================
+may. 12, 2021 2:25:12 A. M. com.ccm.pokemon.pokemon.application.useCases.FavouritePokemonAddedNotifierUseCase addFavouritePokemonCounter
+INFO: FavouritePokemonAddedNotifierUseCase called
 </pre>
 </span>
 </div>
@@ -148,7 +152,7 @@ INFO: ================= Message Published: {&quot;pokemonId&quot;:1234} ========
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.5.1</a> at 12 may. 2021 2:19:11</p>
+<a href="http://www.gradle.org">Gradle 6.5.1</a> at 12 may. 2021 2:25:14</p>
 </div>
 </div>
 </body>
