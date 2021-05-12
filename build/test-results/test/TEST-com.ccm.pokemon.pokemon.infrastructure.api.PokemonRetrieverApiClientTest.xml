@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ccm.pokemon.pokemon.infrastructure.api.PokemonRetrieverApiClientTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-11T23:05:14" hostname="debian" time="1.265">
+<testsuite name="com.ccm.pokemon.pokemon.infrastructure.api.PokemonRetrieverApiClientTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-12T00:19:01" hostname="debian" time="0.971">
   <properties/>
-  <testcase name="shouldFindPokemon()" classname="com.ccm.pokemon.pokemon.infrastructure.api.PokemonRetrieverApiClientTest" time="1.081"/>
-  <testcase name="shouldThrowPokemonNotFoundException()" classname="com.ccm.pokemon.pokemon.infrastructure.api.PokemonRetrieverApiClientTest" time="0.174"/>
+  <testcase name="shouldFindPokemon()" classname="com.ccm.pokemon.pokemon.infrastructure.api.PokemonRetrieverApiClientTest" time="0.833"/>
+  <testcase name="shouldThrowPokemonNotFoundException()" classname="com.ccm.pokemon.pokemon.infrastructure.api.PokemonRetrieverApiClientTest" time="0.129"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

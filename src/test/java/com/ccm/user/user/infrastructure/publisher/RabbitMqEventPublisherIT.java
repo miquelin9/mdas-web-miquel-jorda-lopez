@@ -9,7 +9,6 @@ import io.quarkus.test.junit.QuarkusMock;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-
 import javax.inject.Inject;
 import java.io.IOException;
 

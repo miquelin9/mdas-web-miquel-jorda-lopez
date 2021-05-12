@@ -1,107 +1,73 @@
 # Reto Pokémon: Parte individual
-
 ## Pre-requisitos
 
 * Tener Java 11 instalado
+* Tener docker instalado
 * Comprobar los permisos del fichero gradlew (este fichero se encuentra en la raíz del proyecto, y es lo que se emplea para lanzar la aplicación).
   Es muy probable que la terminal muestre que no tenemos permisos para ejecutarlo, por lo que habrá que cambiarlos mediante `chmod u+x gradlew`
 * Tener algún programa como Postman (la parte de la API no es necesario probarla con Postman, pero este tipo de programas hace que dicha labor sea más sencilla por la interfaz visual de este tipo de aplicaciones como Postman)
 
-## Puesta en marcha
+## Puesta en marcha de RabbitMQ
 
-1) Para asegurar que partimos de un proyecto fresco, ejecutar `./gradlew clean`
-2) Para construir la aplicación, ejecutar `./gradlew build`
-3) Para lanzar la aplicación, ejecutar `java -jar build/mdas-api-g5-1.0-SNAPSHOT-runner.jar`
-
-## Parar la aplicación
-
-* La aplicación se podrá parar por completo pulsando la combinación de teclas CTRL+C
-* La consola, que normalmente se usará para escribir nombres de pokémon, se puede usar para parar la aplicación escribiendo "exit" y pulsando Enter
-
-## Probar la aplicación
-
-La aplicación se puede usar de dos maneras:
-1) Desde la consola
-2) Desde programas tipo Postman
-
-### Desde la consola
-
-1) En la misma terminal desde la que se lanzó el proyecto, escribir el nombre de un Pokémon y pulsar Enter  
-    1.1) En caso de que el Pokémon exista, se mostrarán los tipos del Pokémon  
-    1.2) En caso de que el Pokémon no exista, se mostrará un mensaje (en la propia consola) indicando que no hay ningún Pokémon con el nombre introducido
-2) Para salir de la consola, escribir "exit" y pulsar Enter
-
-### Desde programas tipo Postman
-
-1) Suponiendo que se usa un programa tipo Postman  
-   1.1) Será necesario crear una nueva petición de tipo GET  
-   1.2) La URL a la que hacer peticiones será la siguiente: http://localhost:8081/pokemon/types?name=charizard  
-   1.3) En lugar de charizard, se puede escribir en nombre de cualquier otro Pokémon  
-2) Suponiendo que se usan comandos de terminal como "curl"  
-   2.1) Ejecutar curl http://localhost:8081/pokemon/types?name=charizard  
-   2.2) En lugar de charizard, se puede escribir en nombre de cualquier otro Pokémon
-
-# Reto Pokémon (PARTE 2, gestión de pokémon favoritos de un usuario)
-
-## Pre-requisitos
-
-* Tener Java 11 instalado
-* Comprobar los permisos del fichero gradlew (este fichero se encuentra en la raíz del proyecto, y es lo que se emplea para lanzar la aplicación).
-  Es muy probable que la terminal muestre que no tenemos permisos para ejecutarlo, por lo que habrá que cambiarlos mediante `chmod u+x gradlew`
-* Tener algún programa como Postman (la parte de la API no es necesario probarla con Postman, pero este tipo de programas hace que dicha labor sea más sencilla por la interfaz visual de este tipo de aplicaciones como Postman)
-
-## Puesta en marcha
-
-1) Para asegurar que partimos de un proyecto fresco, ejecutar `./gradlew clean`
-2) Para construir la aplicación, ejecutar `./gradlew build`
-3) Para lanzar la aplicación, ejecutar `java -jar build/mdas-api-g5-1.0-SNAPSHOT-runner.jar`
-
-## Parar la aplicación
-
-Se recomienda parar la aplicación pulsando la combinación de teclas CTRL+C en la consola donde se lanzó el fichero JAR.
-
-## Probar la aplicación (desde programas tipo Postman)
-
-1) Será necesario crear una nueva petición de tipo GET  
-2) Será necesario hacer 1 petición a esta URL para crear un usuario: http://localhost:8081/user/addUser/?name=alberto&userId=1  
-    2.1 En lugar de alberto se puede elegir cualquier otro nombre para el usuario  
-    2.2 En lugar de 1 se puede elegir cualquier otro identificador para el usuario
-3) La URL para añadir pokemon favoritos es la siguiente: http://localhost:8081/user/addFavouritePokemon/?id=6  
-    3.1 En lugar de 6 se puede elegir cualquier otro identificador que insertar  
-    3.2 Advertencia: el header param que representa al id del usuario puede que se añada de forma distinta según la
-        herramienta elegida para hacer las peticiones
+1) Primero habrá que pullear la imagen docker de RabbitMQ. Ejecutar en consola el siguiente comando:
+```
+docker pull rabbitmq:management
+```
+2) Una vez se haya descargado la imagen, habrá que iniciar el contenedor exponiendo los puertos necesarios. Ejecutar el siguiente comando:
+```
+docker run --name=rabbitmq -p 5672:5672 -p 15672:15672 88b2e6b105da
+```
+3) Para comprobar que el contenedor está correctamente en marcha, ir al siguiente link y verificar que el portal de
+RabbitMQ está activo http://localhost:15672. Las credenciales son **guest** y **guest** para usuario y contraseña respectivamente.
    
-## Ejecutar los test unitarios
+## Puesta en marcha de la aplicación
 
-A pesar de que los test unitarios se ejecutan en el momento de ejecutar el comando `./gradlew build`, también se pueden  
-ejecutar mediante el comando `./gradlew cleanTest test`.
-
-# Reto Pokémon (PARTE 3, recuperación de Pokémon)
-
-## Pre-requisitos
-
-* Tener Java 11 instalado
-* Comprobar los permisos del fichero gradlew (este fichero se encuentra en la raíz del proyecto, y es lo que se emplea para lanzar la aplicación).
-  Es muy probable que la terminal muestre que no tenemos permisos para ejecutarlo, por lo que habrá que cambiarlos mediante `chmod u+x gradlew`
-* Tener algún programa como Postman (la parte de la API no es necesario probarla con Postman, pero este tipo de programas hace que dicha labor sea más sencilla por la interfaz visual de este tipo de aplicaciones como Postman)
-
-## Puesta en marcha
-
-1) Para asegurar que partimos de un proyecto fresco, ejecutar `./gradlew clean`
-2) Para construir la aplicación, ejecutar `./gradlew build`
-3) Para lanzar la aplicación, ejecutar `java -jar build/mdas-api-g5-1.0-SNAPSHOT-runner.jar`
+1) Para construir la aplicación, ejecutar `./gradlew clean build`
+2) Para lanzar la aplicación, ejecutar `java -jar build/mdas-web-miquel-jorda-1.0-SNAPSHOT-runner.jar`
 
 ## Parar la aplicación
 
-Se recomienda parar la aplicación pulsando la combinación de teclas CTRL+C en la consola donde se lanzó el fichero JAR.
-
-## Probar la aplicación (desde programas tipo Postman)
-
-1) Será necesario crear una nueva petición de tipo GET
-2) Será necesario hacer 1 petición a esta URL para obtener la información de un Pokémon: http://localhost:8081/pokemon/get/123  
-   2.1 En lugar de 123 se puede elegir cualquier otro id en función del Pokémon que se desee recuperar  
+La aplicación se podrá parar por completo pulsando la combinación de teclas CTRL+C
 
 ## Ejecutar los test
 
-A pesar de que los test unitarios se ejecutan en el momento de ejecutar el comando `./gradlew build`, también se pueden 
-ejecutar mediante el comando `./gradlew cleanTest test`.
+A pesar de que los tests se ejecutan en el momento de ejecutar el comando `./gradlew build`, también se pueden
+ejecutar mediante el comando `./gradlew clean test`.
+
+## Probar la aplicación
+
+La aplicación se puede usar haciendo peticiones http, usando por ejemplo ***Postman***.
+A continuación se detallarán los pasos a seguir para probarlo con dicha aplicación:
+###Postman
+#### 1. Abrir *Postman*
+#### 2. Clicar en el botón ***importar***
+En la siguiente imagen se detalla dónde encontrar dicho botón:
+#### 3. Seleccionar la [colección de postman](./src/main/resources/DiseñoSoftwareII_PracticaFinal.postman_collection.json) *(src/main/resources)*
+Una vez hecho este paso, debería de aparecer una colección como se puede apreciar en la imagen a continuación:
+#### 4. Ejecutar la petición `NEW USER`
+Esta petición tiene dos parámetros, los cuales corresponden al nombre y a la id del ***usuario*** que se quiere crear.
+#### 5. Ejecutar la petición `ADD FAVOURITE POKEMON TO USER`
+Esta petición tiene un parámetro, el cual pertenece a la ***id del pokemon*** al cual se hace referencia. Por otro lado, 
+tiene un parámetro *header* que hace referencia a la ***id del usuario*** al cual se quiere vincular dicho pokemon.
+#### 6. Ejecutar la petición `GET POKEMON`
+Esta petición tiene un parámetro en la query el cual hace referencia a la ***id del pokemon*** el cual queremos recuperar.
+
+---
+### Curl
+Por si hiciese falta, a continuación se detallan las peticiones cURL, presentes en la colección descrita anteriormente.
+#### Create User
+`curl --location --request POST 'http://localhost:8081/user/add?name=Alba&userId=1'`
+#### Add Favourite Pokemon to User
+`curl --location --request POST 'http://localhost:8081/user/favouritepokemon/add?id=3' \
+--header 'id: 1'`
+#### Get Pokemon
+`curl --location --request GET 'http://localhost:8081/pokemon/get/3'`
+
+---
+>NOTA:
+>Si se quiere probar el caso de añadir múltiples veces un mismo Pokemon como favorito, se deberá crear múltiples usuarios y
+> añadir las veces deseadas dicho Pokemon, teniendo en cuenta que como máximo se podrá añadir una vez por usuario.
+
+>NOTA:
+> Las peticiones de la colección se pueden llamar con distintos parámetros para probar lo que haga falta en referencia a 
+> la aplicación.

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ccm.pokemon.pokemon.domain.services.PokemonFinderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-11T23:05:19" hostname="debian" time="0.083">
+<testsuite name="com.ccm.pokemon.pokemon.domain.services.PokemonFinderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-12T00:19:05" hostname="debian" time="0.033">
   <properties/>
   <testcase name="verify_findPokemon_returnsPokemon_whenPokemonExistsInRepository()" classname="com.ccm.pokemon.pokemon.domain.services.PokemonFinderTest" time="0.006"/>
-  <testcase name="verify_findPokemon_returnsPokemonFromPokemonApi_whenPokemonDoesNotExistInRepository()" classname="com.ccm.pokemon.pokemon.domain.services.PokemonFinderTest" time="0.071"/>
+  <testcase name="verify_findPokemon_returnsPokemonFromPokemonApi_whenPokemonDoesNotExistInRepository()" classname="com.ccm.pokemon.pokemon.domain.services.PokemonFinderTest" time="0.024"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

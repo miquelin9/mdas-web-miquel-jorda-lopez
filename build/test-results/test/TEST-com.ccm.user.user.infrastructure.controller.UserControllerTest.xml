@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ccm.user.user.infrastructure.controller.UserControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-05-11T23:05:23" hostname="debian" time="0.789">
+<testsuite name="com.ccm.user.user.infrastructure.controller.UserControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-05-12T00:19:09" hostname="debian" time="0.781">
   <properties/>
-  <testcase name="shouldGetHttpCode409WhenAddingANewFavouritePokemon()" classname="com.ccm.user.user.infrastructure.controller.UserControllerTest" time="0.362"/>
-  <testcase name="shouldAddUser()" classname="com.ccm.user.user.infrastructure.controller.UserControllerTest" time="0.056"/>
-  <testcase name="shouldGetHttpCode403WhenAddingANewFavouritePokemon()" classname="com.ccm.user.user.infrastructure.controller.UserControllerTest" time="0.089"/>
-  <testcase name="shouldGetHttpCode403WhenAddingANewUser()" classname="com.ccm.user.user.infrastructure.controller.UserControllerTest" time="0.157"/>
-  <testcase name="shouldAddFavouritePokemon()" classname="com.ccm.user.user.infrastructure.controller.UserControllerTest" time="0.117"/>
+  <testcase name="shouldGetHttpCode409WhenAddingANewFavouritePokemon()" classname="com.ccm.user.user.infrastructure.controller.UserControllerTest" time="0.274"/>
+  <testcase name="shouldAddUser()" classname="com.ccm.user.user.infrastructure.controller.UserControllerTest" time="0.109"/>
+  <testcase name="shouldGetHttpCode403WhenAddingANewFavouritePokemon()" classname="com.ccm.user.user.infrastructure.controller.UserControllerTest" time="0.099"/>
+  <testcase name="shouldGetHttpCode403WhenAddingANewUser()" classname="com.ccm.user.user.infrastructure.controller.UserControllerTest" time="0.176"/>
+  <testcase name="shouldAddFavouritePokemon()" classname="com.ccm.user.user.infrastructure.controller.UserControllerTest" time="0.107"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[may. 12, 2021 1:05:23 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
+  <system-err><![CDATA[may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
 INFO: Add User with name:tipoDeIncógnito and userId:1 called
-may. 12, 2021 1:05:23 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
+may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
 INFO: Add Favourite Pokemon with id:123 to user with id:1 called
-may. 12, 2021 1:05:23 A. M. com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher publish
+may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher publish
 INFO: ================= Message Published: {"pokemonId":123} =================
-may. 12, 2021 1:05:24 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.BaseRabbitMqListener onMessage
+may. 12, 2021 2:19:09 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.BaseRabbitMqListener onMessage
 INFO: ================= Message received =================
-may. 12, 2021 1:05:24 A. M. com.ccm.pokemon.pokemon.application.useCases.FavouritePokemonAddedNotifierUseCase addFavouritePokemonCounter
+may. 12, 2021 2:19:09 A. M. com.ccm.pokemon.pokemon.application.useCases.FavouritePokemonAddedNotifierUseCase addFavouritePokemonCounter
 INFO: FavouritePokemonAddedNotifierUseCase called
-may. 12, 2021 1:05:24 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
+may. 12, 2021 2:19:09 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
 INFO: Trying to update pokemon 'scyther' favourite counter
-may. 12, 2021 1:05:24 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
+may. 12, 2021 2:19:09 A. M. com.ccm.pokemon.pokemon.domain.services.FavouritePokemonCounterUpdater execute
 INFO: Pokemon 'scyther' favourite counter updated to 2
-may. 12, 2021 1:05:24 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
+may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
 INFO: Add Favourite Pokemon with id:123 to user with id:1 called
-may. 12, 2021 1:05:24 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
+may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
 INFO: Add User with name:tipoDeIncógnito and userId:123456789 called
-may. 12, 2021 1:05:24 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
+may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
 INFO: Add Favourite Pokemon with id:123 to user with id:9 called
-may. 12, 2021 1:05:24 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
+may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
 INFO: Add User with name:tipoDeIncógnito and userId:1 called
-may. 12, 2021 1:05:24 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
+may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
 INFO: Add User with name:tipoDeIncógnito and userId:1 called
-may. 12, 2021 1:05:24 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
+may. 12, 2021 2:19:09 A. M. com.ccm.user.user.infrastructure.controller.UserController addUser
 INFO: Add User with name:tipoDeIncógnito and userId:1 called
-may. 12, 2021 1:05:24 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
+may. 12, 2021 2:19:10 A. M. com.ccm.user.user.infrastructure.controller.UserController addFavouritePokemon
 INFO: Add Favourite Pokemon with id:1234 to user with id:1 called
-may. 12, 2021 1:05:24 A. M. com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher publish
+may. 12, 2021 2:19:10 A. M. com.ccm.user.user.infrastructure.publisher.RabbitMqEventPublisher publish
 INFO: ================= Message Published: {"pokemonId":1234} =================
-may. 12, 2021 1:05:24 A. M. com.ccm.pokemon.pokemon.infrastructure.listener.BaseRabbitMqListener onMessage
 ]]></system-err>
 </testsuite>
